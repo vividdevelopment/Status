@@ -13,6 +13,8 @@
 		3A7ECE8626B258370075EC37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7ECE8426B258370075EC37 /* Main.storyboard */; };
 		3A7ECE8826B258380075EC37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7ECE8726B258380075EC37 /* Assets.xcassets */; };
 		3A7ECE8B26B258380075EC37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7ECE8926B258380075EC37 /* LaunchScreen.storyboard */; };
+		3A80878026B32B130089120C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80877F26B32B130089120C /* StatusViewController.swift */; };
+		3A80878326B48A080089120C /* RemoveNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80878226B48A080089120C /* RemoveNavigation.swift */; };
 		A858C0ABA8D094FE96578533 /* Pods_Status.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1BE5F43AA2D93461722F82 /* Pods_Status.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		3A7ECE8726B258380075EC37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A7ECE8A26B258380075EC37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A7ECE8C26B258380075EC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A80877F26B32B130089120C /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		3A80878226B48A080089120C /* RemoveNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveNavigation.swift; sourceTree = "<group>"; };
 		469D2F1B6FD50BAF3739F9EE /* Pods-Status.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Status.release.xcconfig"; path = "Target Support Files/Pods-Status/Pods-Status.release.xcconfig"; sourceTree = "<group>"; };
 		AE4900B34445327954F5B65B /* Pods-Status.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Status.debug.xcconfig"; path = "Target Support Files/Pods-Status/Pods-Status.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +76,7 @@
 		3A7ECE7D26B258370075EC37 /* Status */ = {
 			isa = PBXGroup;
 			children = (
+				3A80878126B489E50089120C /* Extensions */,
 				3A7ECE9426B25B180075EC37 /* Delegates */,
 				3A7ECE9326B25B030075EC37 /* Storyboards */,
 				3A7ECE9226B25AE00075EC37 /* Views */,
@@ -84,6 +89,9 @@
 		3A7ECE9226B25AE00075EC37 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3A80877B26B32A4B0089120C /* Explore */,
+				3A80877A26B32A3F0089120C /* Camera */,
+				3A80877926B328310089120C /* Status */,
 				3A7ECE8226B258370075EC37 /* ViewController.swift */,
 			);
 			path = Views;
@@ -105,6 +113,60 @@
 				3A7ECE7E26B258370075EC37 /* AppDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		3A80877926B328310089120C /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				3A80877E26B32AA60089120C /* Views */,
+				3A80877D26B32AA00089120C /* Handlers */,
+				3A80877C26B32A970089120C /* Delegates */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		3A80877A26B32A3F0089120C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		3A80877B26B32A4B0089120C /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		3A80877C26B32A970089120C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		3A80877D26B32AA00089120C /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		3A80877E26B32AA60089120C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A80877F26B32B130089120C /* StatusViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A80878126B489E50089120C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A80878226B48A080089120C /* RemoveNavigation.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EABFC3209D527B75FADCE278 /* Frameworks */ = {
@@ -229,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A80878026B32B130089120C /* StatusViewController.swift in Sources */,
+				3A80878326B48A080089120C /* RemoveNavigation.swift in Sources */,
 				3A7ECE8326B258370075EC37 /* ViewController.swift in Sources */,
 				3A7ECE7F26B258370075EC37 /* AppDelegate.swift in Sources */,
 				3A7ECE8126B258370075EC37 /* SceneDelegate.swift in Sources */,
@@ -386,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.status.Status;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abyss.status;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -406,7 +470,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.status.Status;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abyss.status;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
